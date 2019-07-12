@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Jogo da velha by Tiago Ribeiro Santos</title>
+		<script src="js/jquery-3.4.1.js"></script>
+		<script src="jogo.js"></script>
+		<style>
+			body{
+				background:black;
+				color:white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1 align="center">Jogo da VELHA game</h1>
+		<h1  align="center">by : Tiago Ribeiro Santos</h1>
+		<h3 align="center">Desenvolvido com JavaScript,JQuery,HTML5 e CSS3</h3>
+		<div id="pagina_inicial"  align="center">
+			<table border="0" style="width:600px;">
+				<tbody>
+					<tr>
+						<td colspan="3" align="center">JOGO DA VELHA</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<img  src="imagens/jogador_1.png"  >
+							<br>
+							<input type="text" maxlength="10" placeholder="Jogador1 apelido" class="apelido1" />
+						</td>
+						<td align="center">
+							<h4>INICIAR JOGO!</h4>
+							<img  class="btn_iniciar" src="imagens/iniciar.png" >
+						</td>
+						<td align="center">
+							<img src="imagens/jogador_2.png" >
+							<br>
+							<input type="text" maxlength="10" placeholder="Jogador2 apelido" class="apelido2" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="palco_jogo" style="margin-top: 50px;text-align: center;">
+			<div style="display: inline-block;">
+				<img src="imagens/jogador_1.png">
+				<br>
+				<span id='jogador1'>
+					
+				</span>
+			</div>
+			<div style="display: inline-block;">
+				<table border="0">
+					<tr>
+						<td style="border-bottom: solid 1px red; border-right:  solid 1px red;">
+							<div class= "jogada" id="a-1" style="width:100px;height: 100px;"></div>
+						</td>
+						<td style="border-bottom: solid 1px red; border-right:  solid 1px red;">
+							<div  class= "jogada" id="a-2"style="width:100px;height: 100px;"></div>
+						</td>
+						<td style="border-bottom: solid 1px red; ">
+							<div  class= "jogada" id="a-3" style="width:100px;height: 100px;"></div>
+						</td>
+					</tr>
+					<tr>
+						<td style="border-bottom: solid 1px red; border-right:  solid 1px red;">
+							<div class= "jogada" id="b-1" style="width:100px;height: 100px;"></div>
+						</td>
+						<td style="border-bottom: solid 1px red; border-right:  solid 1px red;">
+							<div class= "jogada" id="b-2" style="width:100px;height: 100px;"></div>
+						</td>
+						<td style="border-bottom: solid 1px red; ">
+							<div class= "jogada"  id="b-3" style="width:100px;height: 100px;"></div>
+						</td>
+					</tr>
+					<tr>
+						<td style=" border-right:  solid 1px red;">
+							<div class= "jogada" id="c-1" style="width:100px;height: 100px;"></div>
+						</td>
+						<td style=" border-right:  solid 1px red;">
+							<div class= "jogada" id="c-2"  style="width:100px;height: 100px;"></div>
+						</td>
+						<td>
+							<div class= "jogada" id="c-3"  style="width:100px;height: 100px;"></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div style="display: inline-block;">
+				<img src="imagens/jogador_2.png">
+				<br>
+				<span id='jogador2'>
+					
+				</span>
+			</div>
+			
+		</div>
+<div style="position: relative;bottom: -30px;">
+	<p align="center">Email : tiago.programador@hotmail.com</p>
+	<p align="center">Contact : (027) 9 9629 6021</p>
+	<p align="center">WebSite : www.tiagoribeiro.atwebpages.com</p>
+	<p align="center">gitHub: www.github.com/tiglinux</p>
+</div>
+	</body>
+</html>
